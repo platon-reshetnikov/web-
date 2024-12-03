@@ -1,0 +1,155 @@
+/* Admin.css */
+
+/* Общие стили для страницы */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
+    line-height: 1.6;
+}
+
+/* Заголовок страницы */
+h1 {
+    background-color: #333; /* Темный заголовок */
+    color: #fff; /* Белый текст */
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Список записей */
+#bookingList {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+#bookingList li {
+    background-color: #2a2a2a; /* Темно-серый фон */
+    border: 1px solid #444; /* Темная рамка */
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookingList li button {
+    background-color: #444; /* Темный фон кнопки */
+    color: #e0e0e0; /* Светлый текст */
+    border: 1px solid #555;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+#bookingList li button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+#bookingList li button:last-child {
+    background-color: #b71c1c; /* Темно-красный для кнопки удаления */
+    border: 1px solid #880e0e;
+}
+
+#bookingList li button:last-child:hover {
+    background-color: #f44336;
+}
+
+/* Форма редактирования */
+#editForm {
+    background-color: #2a2a2a; /* Темный фон формы */
+    border: 1px solid #444;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#editForm h2 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+}
+
+#editForm label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+#editForm input,
+#editForm select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+#editForm input:disabled {
+    background-color: #333;
+    color: #888;
+}
+
+#editForm button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+#editForm #updateButton {
+    background-color: #00695c; /* Темный зеленый */
+    transition: all 0.3s ease;
+}
+
+#editForm #updateButton:hover {
+    background-color: #00897b;
+}
+
+#editForm #cancelButton {
+    background-color: #b71c1c; /* Темно-красный */
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+#editForm #cancelButton:hover {
+    background-color: #f44336;
+}
+
+/* Для небольших экранов */
+@media (max-width: 600px) {
+    #bookingList li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #bookingList li button {
+        margin-top: 10px;
+    }
+}
+
