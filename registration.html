@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="css/Registration.css">
+</head>
+<body>
+    <h1>Ласкаво просимо на сторінку реєстрації користувачів!</h1>
+    <form id="registerForm">
+        <input type="text" id="lastName" placeholder="Прізвище" required>
+        <input type="text" id="firstName" placeholder="Ім'я" required>
+        <input type="text" id="middleName" placeholder="По-батькові" required>
+        <input type="text" id="address" placeholder="Адреса" required>
+        <input type="text" id="phone" placeholder="Телефон" required>
+        <input type="date" id="dob" placeholder="Дата народження" required>
+        <select id="role">
+            <option value="Адміністратор">Адміністратор</option>
+            <option value="Майстер">Майстер</option>
+            <option value="Клієнт">Клієнт</option>
+        </select>
+        <input type="text" id="username" placeholder="Логін" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="button" onclick="registerUser()">Зберегти</button>
+    </form>
+    <script src="js/registration.js"></script>
+</body>
+</html>

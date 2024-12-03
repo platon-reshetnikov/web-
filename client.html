@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис клієнта</title>
+    <link rel="stylesheet" href="css/Client.css">
+</head>
+<body>
+    <h1>Запис на прийом до майстра</h1>
+    <form id="bookingForm">
+        <label for="master">Виберіть майстра:</label>
+        <select id="master" required>
+            <option value="" disabled selected>Виберіть майстра</option>
+            <option value="Олександр (чоловічий майстер)">Олександр (чоловічий майстер)</option>
+            <option value="Денис (чоловічий майстер)">Денис (чоловічий майстер)</option>
+            <option value="Вікторія (жіночий майстер)">Вікторія (жіночий майстер)</option>
+            <option value="Аліса (жіночий майстер)">Аліса (жіночий майстер)</option>
+            <option value="Крис (жіночий майстер)">Крис (жіночий майстер)</option>
+        </select>
+
+        <label for="service">Виберіть послугу:</label>
+        <select id="service" required>
+            <option value="Стрижка - 500 гр">Стрижка - 500 гр.</option>
+            <option value="Стрижки бороди, вусів - 600 гр">Стрижки бороди, вусів - 600 гр.</option>
+            <option value="Вечірні та весільні зачіски - 1800 гр">Вечірні та весільні зачіски - 1800 гр.</option>
+            <option value="Покраска волосся - 400 гр">Покраска волосся - 400 гр.</option>
+            <option value="Завивка волосся - 400 гр">Завивка волосся - 400 гр.</option>
+            <option value="Відновлення волосся - 1000 гр">Відновлення волосся - 1000 гр.</option>
+            <option value="Педикюр: класичний, апаратний, SPA педикюр - 700/9000/1100 гр">Педикюр: класичний, апаратний, SPA педикюр - 700/9000/1100 гр.</option>
+            <option value="SPA догляд для рук та ніг - 1500 гр">SPA догляд для рук та ніг - 1500 гр.</option>
+            <option value="Покриття нігтів гель-лаком Shellac CND, Kodi - 1200 гр">Покриття нігтів гель-лаком Shellac CND, Kodi - 1200 гр.</option>
+            <option value="Нарощування та зміцнення натуральних нігтів гелем - 1600 гр">Нарощування та зміцнення натуральних нігтів гелем - 1600 гр.</option>
+            <option value="Макіяж - 300-700 гр">Макіяж - 300-700 гр.</option>
+            <option value="Візаж - 250 гр">Візаж - 250 гр.</option>
+        </select>
+
+        <label for="date">Виберіть дату:</label>
+        <input type="date" id="date" required>
+
+        <label for="time">Виберіть час:</label>
+        <select id="time" required>
+            <option value="" disabled selected>Виберіть час:</option>
+        </select>
+
+        <label for="clientName">Ім'я клієнта:</label>
+        <input type="text" id="clientName" required>
+
+        <label for="clientPhone">Телефон клієнта:</label>
+        <input type="text" id="clientPhone" required>
+
+        <button type="submit">Записатись</button>
+    </form>
+
+    <div id="confirmation" style="display:none;">
+        <h2>Запис успішно створено!</h2>
+        <p>Ваше бронювання підтверджено.</p>
+    </div>
+
+    <script src="js/client.js"></script>
+</body>
+</html>
