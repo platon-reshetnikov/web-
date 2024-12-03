@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Rubik+Mono+One&display=swap');
 
+@media (max-width: 768px) {
+    .order {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -139,36 +151,76 @@ button:hover{
     object-fit: cover;
 }
 
-.order{
+.order {
     width: 95%;
-    margin: 0 auto;
-    padding: 20px 0;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #1E0000;
     display: flex;
+    gap: 20px;
     justify-content: space-evenly;
-    /* border: 1px solid red; */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.info{
-    width: 22%;
-    /* border: 1px solid red; */
+.info {
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
     color: #9D331F;
-    line-height: 1.6;
+    line-height: 1.8;
 }
 
-.info > p{
+.info > p {
     color: #BC6D4F;
 }
 
-.info1{
+h1, h2 {
+    margin-top: 0;
+    color: #9D331F;
+}
+
+.info1 {
     text-align: left;
 }
 
-.info2{
+.info2 {
     text-align: center;
 }
 
-.info3{
+.info3 {
     text-align: right;
 }
 
+
+
+.forma{
+    width: 70%;
+    margin: 7% auto;
+    /* border: 1px solid wheat; */
+}
+
+.forma > h1{
+    text-align: center;
+    padding: 20px 0;
+    color: #9D331F;
+}
+
+.forma > input{
+    width: 26%;
+    height: 30px;
+    margin: 0 37%;
+    
+}
+
+.forma > button{
+    width: 26%;
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+.forma > p{
+    text-align: center;
+    font-size: 19px;
+    color: #BC6D4F;
+}
