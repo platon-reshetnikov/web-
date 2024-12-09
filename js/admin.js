@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         displayBookings();
     }
+
+    const servicesButton = document.getElementById('servicesButton');
+    servicesButton.addEventListener('click', function() {
+        window.location.href = 'services.html';
+    });
 });
 
 function displayBookings() {

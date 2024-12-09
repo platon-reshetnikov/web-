@@ -10,7 +10,9 @@ function registerUser() {
         username: document.getElementById('username').value,
         password: document.getElementById('password').value
     };
-
     localStorage.setItem(user.username, JSON.stringify(user));
+
     alert('Користувач успішно зареєстровано!');
+    window.location.href = 'login.html';
 }
+
