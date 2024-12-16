@@ -14,18 +14,6 @@ body {
     height: 100vh;
 }
 
-h1 {
-    color: #ffffff;
-    font-size: 28px;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: #400101; /* Темный фон заголовка */
-    padding: 10px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-}
 
 /* Форма входа */
 form {
