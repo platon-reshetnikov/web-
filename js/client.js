@@ -26,19 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const booking = { clientName, clientPhone, master, service, price: service.split(' - ')[1], date, time };
+        const booking = { 
+            clientName, 
+            clientPhone, 
+            master, 
+            service, 
+            price: service.split(' - ')[1], 
+            date, 
+            time 
+        };
 
         bookings.push(booking);
         localStorage.setItem('bookings', JSON.stringify(bookings));
 
-        document.getElementById('bookingForm').reset();
-        document.getElementById('confirmation').style.display = 'block';
+        alert('Бронювання успішно створено!'); // Оповещение об успешной записи
 
-        setTimeout(() => {
-            document.getElementById('confirmation').style.display = 'none';
-        }, 5000);
-
-        updateAvailableTimes();
+        // Переход на index.html
+        window.location.href = 'index.html';
     });
 
     function updateAvailableTimes() {
